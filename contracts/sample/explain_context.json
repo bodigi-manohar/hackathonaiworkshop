@@ -1,10 +1,30 @@
 {
   "run_id": "2013-02-15T00-00",
-  "peak": {"time": "2013-02-15T18:30:00+11:00", "p50_kw": 182.5, "p90_kw": 195.0},
+  "peak": {
+    "time": "2013-02-15T18:30:00+11:00",
+    "p50_kw": 182.0,
+    "p90_kw": 195.3
+  },
   "total_kwh_next_24h": 3120.0,
-  "drivers": ["Hot afternoon (max 36 C)", "Weekday evening", "Low solar after 17:00"],
+  "drivers": [
+    "Hot afternoon (max 36 C)",
+    "Weekday evening",
+    "Low solar after 17:00"
+  ],
   "band_width_note": "P10-P90 band is widest at the evening peak",
-  "accuracy_last_7_days": {"mae_kw": 10.2, "skill_vs_naive": 0.21},
-  "alerts_summary": ["1 peak alert (warn)"],
-  "plan_summary": {"saving": 37.3, "peak_reduction_kw": 22.4}
+  "accuracy_last_7_days": {
+    "mae_kw": 10.2,
+    "skill_vs_naive": 0.21
+  },
+  "alerts_summary": [
+    "1 peak alert (warn)"
+  ],
+  "plan_summary": {
+    "saving": 37.3,
+    "peak_reduction_kw": 22.4
+  },
+  "weather": {
+    "max_apparent_temp_c": 36.0,
+    "source": "open-meteo"
+  }
 }

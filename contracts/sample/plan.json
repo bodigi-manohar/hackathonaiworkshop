@@ -2,10 +2,448 @@
   "mode": "advisory",
   "assumptions": "Illustrative tariff and battery values",
   "slots": [
-    {"slot": 0, "price": 0.18, "grid_before_kw": 125.2, "grid_after_kw": 140.0,
-     "battery_charge_kw": 14.8, "battery_discharge_kw": 0.0, "soc_kwh": 60.0}
+    {
+      "slot": 0,
+      "price": 0.12,
+      "grid_before_kw": 118.0,
+      "grid_after_kw": 108.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 54.8
+    },
+    {
+      "slot": 1,
+      "price": 0.12,
+      "grid_before_kw": 115.0,
+      "grid_after_kw": 105.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 59.5
+    },
+    {
+      "slot": 2,
+      "price": 0.12,
+      "grid_before_kw": 112.0,
+      "grid_after_kw": 102.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 64.2
+    },
+    {
+      "slot": 3,
+      "price": 0.12,
+      "grid_before_kw": 110.0,
+      "grid_after_kw": 100.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 69.0
+    },
+    {
+      "slot": 4,
+      "price": 0.12,
+      "grid_before_kw": 108.0,
+      "grid_after_kw": 98.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 73.8
+    },
+    {
+      "slot": 5,
+      "price": 0.12,
+      "grid_before_kw": 106.5,
+      "grid_after_kw": 96.5,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 78.5
+    },
+    {
+      "slot": 6,
+      "price": 0.12,
+      "grid_before_kw": 105.0,
+      "grid_after_kw": 95.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 83.2
+    },
+    {
+      "slot": 7,
+      "price": 0.12,
+      "grid_before_kw": 104.5,
+      "grid_after_kw": 94.5,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 88.0
+    },
+    {
+      "slot": 8,
+      "price": 0.12,
+      "grid_before_kw": 104.0,
+      "grid_after_kw": 94.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 92.8
+    },
+    {
+      "slot": 9,
+      "price": 0.12,
+      "grid_before_kw": 105.0,
+      "grid_after_kw": 97.4,
+      "battery_charge_kw": 7.6,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 96.4
+    },
+    {
+      "slot": 10,
+      "price": 0.12,
+      "grid_before_kw": 106.0,
+      "grid_after_kw": 102.2,
+      "battery_charge_kw": 3.8,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 98.2
+    },
+    {
+      "slot": 11,
+      "price": 0.12,
+      "grid_before_kw": 110.5,
+      "grid_after_kw": 108.6,
+      "battery_charge_kw": 1.9,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 12,
+      "price": 0.12,
+      "grid_before_kw": 115.0,
+      "grid_after_kw": 115.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 13,
+      "price": 0.12,
+      "grid_before_kw": 125.0,
+      "grid_after_kw": 125.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 14,
+      "price": 0.24,
+      "grid_before_kw": 135.0,
+      "grid_after_kw": 135.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 15,
+      "price": 0.24,
+      "grid_before_kw": 142.5,
+      "grid_after_kw": 142.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 16,
+      "price": 0.24,
+      "grid_before_kw": 150.0,
+      "grid_after_kw": 150.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 17,
+      "price": 0.24,
+      "grid_before_kw": 154.0,
+      "grid_after_kw": 154.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 18,
+      "price": 0.24,
+      "grid_before_kw": 158.0,
+      "grid_after_kw": 158.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 19,
+      "price": 0.24,
+      "grid_before_kw": 159.0,
+      "grid_after_kw": 159.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 20,
+      "price": 0.24,
+      "grid_before_kw": 160.0,
+      "grid_after_kw": 160.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 21,
+      "price": 0.24,
+      "grid_before_kw": 161.5,
+      "grid_after_kw": 161.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 22,
+      "price": 0.24,
+      "grid_before_kw": 163.0,
+      "grid_after_kw": 163.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 23,
+      "price": 0.24,
+      "grid_before_kw": 162.0,
+      "grid_after_kw": 162.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 24,
+      "price": 0.24,
+      "grid_before_kw": 161.0,
+      "grid_after_kw": 161.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 25,
+      "price": 0.24,
+      "grid_before_kw": 159.5,
+      "grid_after_kw": 159.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 26,
+      "price": 0.24,
+      "grid_before_kw": 158.0,
+      "grid_after_kw": 158.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 27,
+      "price": 0.24,
+      "grid_before_kw": 156.5,
+      "grid_after_kw": 156.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 28,
+      "price": 0.38,
+      "grid_before_kw": 155.0,
+      "grid_after_kw": 155.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 29,
+      "price": 0.38,
+      "grid_before_kw": 152.5,
+      "grid_after_kw": 152.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 30,
+      "price": 0.38,
+      "grid_before_kw": 150.0,
+      "grid_after_kw": 150.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 31,
+      "price": 0.38,
+      "grid_before_kw": 151.0,
+      "grid_after_kw": 151.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 32,
+      "price": 0.38,
+      "grid_before_kw": 152.0,
+      "grid_after_kw": 152.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 33,
+      "price": 0.38,
+      "grid_before_kw": 158.5,
+      "grid_after_kw": 158.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 34,
+      "price": 0.38,
+      "grid_before_kw": 165.0,
+      "grid_after_kw": 165.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 35,
+      "price": 0.38,
+      "grid_before_kw": 173.5,
+      "grid_after_kw": 173.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 99.1
+    },
+    {
+      "slot": 36,
+      "price": 0.38,
+      "grid_before_kw": 182.0,
+      "grid_after_kw": 192.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 10.0,
+      "soc_kwh": 93.8
+    },
+    {
+      "slot": 37,
+      "price": 0.38,
+      "grid_before_kw": 178.5,
+      "grid_after_kw": 188.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 10.0,
+      "soc_kwh": 88.5
+    },
+    {
+      "slot": 38,
+      "price": 0.38,
+      "grid_before_kw": 175.0,
+      "grid_after_kw": 185.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 10.0,
+      "soc_kwh": 83.3
+    },
+    {
+      "slot": 39,
+      "price": 0.38,
+      "grid_before_kw": 165.0,
+      "grid_after_kw": 175.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 10.0,
+      "soc_kwh": 78.0
+    },
+    {
+      "slot": 40,
+      "price": 0.24,
+      "grid_before_kw": 155.0,
+      "grid_after_kw": 155.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 78.0
+    },
+    {
+      "slot": 41,
+      "price": 0.24,
+      "grid_before_kw": 147.5,
+      "grid_after_kw": 147.5,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 78.0
+    },
+    {
+      "slot": 42,
+      "price": 0.24,
+      "grid_before_kw": 140.0,
+      "grid_after_kw": 140.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 78.0
+    },
+    {
+      "slot": 43,
+      "price": 0.24,
+      "grid_before_kw": 134.0,
+      "grid_after_kw": 134.0,
+      "battery_charge_kw": 0.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 78.0
+    },
+    {
+      "slot": 44,
+      "price": 0.12,
+      "grid_before_kw": 128.0,
+      "grid_after_kw": 118.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 82.8
+    },
+    {
+      "slot": 45,
+      "price": 0.12,
+      "grid_before_kw": 125.0,
+      "grid_after_kw": 115.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 87.5
+    },
+    {
+      "slot": 46,
+      "price": 0.12,
+      "grid_before_kw": 122.0,
+      "grid_after_kw": 112.0,
+      "battery_charge_kw": 10.0,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 92.3
+    },
+    {
+      "slot": 47,
+      "price": 0.12,
+      "grid_before_kw": 120.0,
+      "grid_after_kw": 111.9,
+      "battery_charge_kw": 8.1,
+      "battery_discharge_kw": 0.0,
+      "soc_kwh": 96.1
+    }
   ],
-  "cost_before": 410.2, "cost_after": 372.9, "saving": 37.3,
-  "peak_before_kw": 182.5, "peak_after_kw": 160.1,
-  "generator_recommendation": [{"slot": 36, "message": "Generator cheaper than grid for this slot"}]
+  "cost_before": 825.17,
+  "cost_after": 824.29,
+  "saving": 0.88,
+  "peak_before_kw": 182.0,
+  "peak_after_kw": 192.0,
+  "generator_recommendation": [
+    {
+      "slot": 36,
+      "message": "Generator cheaper than grid for this slot"
+    }
+  ]
 }

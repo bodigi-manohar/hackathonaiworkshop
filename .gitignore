@@ -1,8 +1,7 @@
-# data and generated artifacts (big / reproducible locally)
-data/
-runs/
-models/
-ml_legacy_prev/
+# data and generated artifacts (root-level, big / reproducible locally)
+/data/
+/runs/
+/models/
 
 # secrets
 .env
@@ -13,3 +12,9 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 .venv/
+.ruff_cache/
+
+# local backend databases
+*.db
+*.db-shm
+*.db-wal
