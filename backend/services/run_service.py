@@ -70,6 +70,41 @@ def ensure_bundle(bundle: Bundle, config: AppConfig, db: Session | None = None, 
         plan = build_plan(forecast, config)
         (bundle.path / "plan.json").write_text(json.dumps(plan, indent=2), encoding="utf-8")
         logger.info("wrote plan.json for run %s (saving=%.2f)", bundle.run_id, plan.get("saving", 0.0))
+    # Backfill explain_context.json so the chat/LLM sees the computed alerts and plan
+    ctx_path = bundle.path / "explain_context.json"
+    if ctx_path.is_file():
+        try:
+            ctx = json.loads(ctx_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            ctx = {}
+        alerts_path = bundle.path / "alerts.json"
+        if alerts_path.is_file():
+            try:
+                ctx["alerts_summary"] = _alert_summary(json.loads(alerts_path.read_text(encoding="utf-8")))
+            except json.JSONDecodeError:
+                pass
+        plan_path = bundle.path / "plan.json"
+        if plan_path.is_file():
+            try:
+                plan_now = json.loads(plan_path.read_text(encoding="utf-8"))
+                before = float(plan_now.get("peak_before_kw") or 0.0)
+                after = float(plan_now.get("peak_after_kw") or 0.0)
+                ctx["plan_summary"] = {"saving": plan_now.get("saving"),
+                                       "peak_reduction_kw": round(before - after, 1)}
+            except (json.JSONDecodeError, TypeError, ValueError):
+                pass
+        ctx_path.write_text(json.dumps(ctx, indent=2), encoding="utf-8")
+
+
+def _alert_summary(alerts: list[dict]) -> list[str]:
+    """Contract format, e.g. ["1 peak alert (warn)"]."""
+    if not alerts:
+        return []
+    counts: dict[tuple[str, str], int] = {}
+    for a in alerts:
+        key = (str(a.get("type", "alert")), str(a.get("severity", "info")))
+        counts[key] = counts.get(key, 0) + 1
+    return [f"{n} {t} alert ({s})" for (t, s), n in counts.items()]
 
 
 class RunService:

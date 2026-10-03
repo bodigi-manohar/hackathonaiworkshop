@@ -135,6 +135,7 @@ def repair_weather(df: pd.DataFrame, cfg: dict) -> pd.DataFrame:
     out["T2MWET"] = wet_bulb
     if "PRECTOTCORR" in out.columns:
         out["PRECTOTCORR"] = m["precipitation"].to_numpy(float)
+    dump_json({"source": "open-meteo-repaired"}, path(cfg, "processed_dir", "weather_source.json", mkdir=True))
     print(f"[data] repaired weather columns from Open-Meteo ({why})")
     return out
 

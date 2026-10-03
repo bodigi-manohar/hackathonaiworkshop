@@ -26,6 +26,17 @@ from .utils import dump_json, iso, parse_origin, run_id_for
 WEATHER_SOURCE = "dataset-oracle"
 
 
+def _weather_source(cfg: dict) -> str:
+    """Honest label: 'open-meteo-repaired' when ml.data replaced the corrupt dataset columns."""
+    p = path(cfg, "processed_dir", "weather_source.json")
+    if p.is_file():
+        try:
+            return str(json.loads(p.read_text(encoding="utf-8")).get("source") or WEATHER_SOURCE)
+        except json.JSONDecodeError:
+            return WEATHER_SOURCE
+    return WEATHER_SOURCE
+
+
 def validate_forecast(fc: dict) -> None:
     need = {"run_id", "origin_time", "level", "entity_id", "unit", "slot_minutes", "model_version", "weather_source", "points", "history"}
     miss = need - set(fc)
@@ -113,6 +124,8 @@ def _explain_context(cfg, run_id, fc, port_g, o, acc, is_hol, in_sample) -> dict
 def run_cycle(cfg: dict, origin_str: str, model: str = "ensemble", levels=("portfolio", "zone", "house"), force: bool = False) -> str:
     t0 = time.time()
     tz = cfg["time"]["tz"]
+    global WEATHER_SOURCE
+    WEATHER_SOURCE = _weather_source(cfg)
     origin = parse_origin(origin_str, tz)
     run_id = run_id_for(origin)
     rdir = path(cfg, "runs_dir", run_id)
