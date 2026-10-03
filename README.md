@@ -55,6 +55,28 @@ With degraded (noisy) weather the portfolio skill is 0.208 — the expected degr
 `explain_context.json`, `metrics.json`, `run_meta.json`, `entities.json`.
 48 points, unit kW, `p10 <= p50 <= p90`, timestamps in Australia/Sydney, one slot = 30 min.
 
+## Contribution workflow (all members)
+
+| Member | Folder | Branch |
+|---|---|---|
+| 1 (Manohar) | `ml/` | `m1-ml` |
+| 2 (Chaitu) | `backend/` | `m2-backend` |
+| 3 | `frontend/` | `m3-frontend` |
+
+```bash
+git clone https://github.com/bodigi-manohar/hackathonaiworkshop.git
+cd hackathonaiworkshop
+git checkout -b m2-backend          # use your own branch
+# ...work inside your folder...
+git add backend/
+git commit -m "m2: add /forecast endpoint"
+git push -u origin m2-backend
+```
+
+Merge into `main` at sync points (S0–S4). Never edit another member's folder; contract changes
+go in `contracts/` and need all three members' approval. `data/`, `runs/` and `models/` are
+git-ignored; `reports/` and `docs/` are committed.
+
 ## Rules
 
 - Walk-forward (expanding window) only — never shuffled k-fold, never fit on future data.
