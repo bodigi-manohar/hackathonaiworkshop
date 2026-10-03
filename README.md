@@ -72,6 +72,28 @@ python -m backend.replay --start 2013-02-10 --days 7
 The API reads `runs/<run_id>/` (written by `ml.run_cycle`); if `runs/` is empty it serves
 `contracts/sample/` in mock mode.
 
+## Member 3 (`frontend/`) quick start
+
+Dashboard: plain HTML + CSS + JS with Chart.js (CDN) — no build step. Full file map,
+design system and smoke test: [`frontend/README.md`](frontend/README.md).
+
+```powershell
+# any static server, from the frontend/ folder
+cd frontend
+python -m http.server 8080
+# open http://localhost:8080/
+```
+
+Or open `frontend/index.html` directly in a browser — mock data is embedded, so it works
+offline too.
+
+- **Mock mode (default):** deterministic sample data (embedded in `frontend/mock-data.js`;
+  served from `contracts/sample/*.json` when available).
+- **Live mode:** `?mock=0` or the toggle in the Settings tab — FastAPI at
+  `http://localhost:8000` (one config value: `API_BASE` in `frontend/api.js`).
+
+7 tabs: Overview · Granularity · Alerts · Optimizer · Accuracy · Assistant · Settings.
+
 ## Run bundle (what Members 2 & 3 consume)
 
 `runs/<run_id>/`: `forecast.json` (portfolio), `forecast_zone_*.json`, `forecast_house_*.json`,
