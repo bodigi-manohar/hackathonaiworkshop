@@ -1,0 +1,51 @@
+# GridSight backend configuration.
+# Tariff, battery, generator and shiftable-load values are ILLUSTRATIVE ASSUMPTIONS.
+
+alerts:
+  peak_threshold_kw: 170.0
+  peak_quantile: p50            # p50 | p90
+  critical_factor: 1.10         # value >= threshold * factor => critical
+  ramp_kw: 20.0
+  ramp_window_slots: 4
+  low_confidence_band_fraction: 0.25   # (p90-p10)/p50 above this at peak => alert
+  drift_ratio_threshold: 1.3
+  heatwave_apparent_temp_c: 33.0
+  cooldown_hours: 6.0
+
+tariff:
+  assumption: "Illustrative time-of-use tariff (assumption, not real pricing)"
+  slot_minutes: 30
+  bands:
+    - {name: off_peak, start_hour: 22, end_hour: 7, price_per_kwh: 0.12}
+    - {name: peak, start_hour: 14, end_hour: 20, price_per_kwh: 0.38}
+  shoulder_price_per_kwh: 0.24
+  demand_charge_per_kw: 2.0
+
+battery:
+  capacity_kwh: 100.0
+  max_charge_kw: 10.0
+  max_discharge_kw: 10.0
+  charge_efficiency: 0.95
+  discharge_efficiency: 0.95
+  soc_min_kwh: 10.0
+  soc_initial_kwh: 50.0
+  use_p90: false                # conservative mode: optimise on p90 instead of p50
+
+shiftable_loads:
+  - {name: pool_pump, kw: 3.0, duration_slots: 4, allowed_start_slot: 0, allowed_end_slot: 19}
+  - {name: ev_charge, kw: 7.0, duration_slots: 8, allowed_start_slot: 22, allowed_end_slot: 45}
+
+generator:
+  cost_per_kwh: 0.45
+
+control:
+  enabled: false
+  dry_run: true
+  max_kw: 12.0
+  max_setpoint_change_kw: 5.0
+
+scheduler:
+  enabled: false
+  cron_hour: 0                  # nightly full run, local Australia/Sydney
+
+run_cycle_timeout_seconds: 300

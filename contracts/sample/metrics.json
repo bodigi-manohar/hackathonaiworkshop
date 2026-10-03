@@ -1,0 +1,171 @@
+{
+  "scope": "walk_forward_backtest",
+  "by_model": [
+    {
+      "model": "seasonal_naive",
+      "mae": 12.4,
+      "rmse": 16.0,
+      "nmae": 0.098,
+      "skill": 0.0
+    },
+    {
+      "model": "weekly_naive",
+      "mae": 11.1,
+      "rmse": 14.8,
+      "nmae": 0.088,
+      "skill": 0.1
+    },
+    {
+      "model": "ridge",
+      "mae": 10.6,
+      "rmse": 14.0,
+      "nmae": 0.084,
+      "skill": 0.14
+    },
+    {
+      "model": "lightgbm",
+      "mae": 9.9,
+      "rmse": 13.3,
+      "nmae": 0.079,
+      "skill": 0.2
+    },
+    {
+      "model": "ensemble",
+      "mae": 9.8,
+      "rmse": 13.1,
+      "nmae": 0.077,
+      "skill": 0.21
+    }
+  ],
+  "by_hour": [
+    {
+      "hour": 0,
+      "mae": 21.0
+    },
+    {
+      "hour": 1,
+      "mae": 20.2
+    },
+    {
+      "hour": 2,
+      "mae": 19.5
+    },
+    {
+      "hour": 3,
+      "mae": 18.8
+    },
+    {
+      "hour": 4,
+      "mae": 18.0
+    },
+    {
+      "hour": 5,
+      "mae": 17.2
+    },
+    {
+      "hour": 6,
+      "mae": 16.5
+    },
+    {
+      "hour": 7,
+      "mae": 15.8
+    },
+    {
+      "hour": 8,
+      "mae": 15.0
+    },
+    {
+      "hour": 9,
+      "mae": 14.2
+    },
+    {
+      "hour": 10,
+      "mae": 13.5
+    },
+    {
+      "hour": 11,
+      "mae": 12.8
+    },
+    {
+      "hour": 12,
+      "mae": 12.0
+    },
+    {
+      "hour": 13,
+      "mae": 11.2
+    },
+    {
+      "hour": 14,
+      "mae": 10.5
+    },
+    {
+      "hour": 15,
+      "mae": 9.8
+    },
+    {
+      "hour": 16,
+      "mae": 9.0
+    },
+    {
+      "hour": 17,
+      "mae": 8.2
+    },
+    {
+      "hour": 18,
+      "mae": 7.5
+    },
+    {
+      "hour": 19,
+      "mae": 8.2
+    },
+    {
+      "hour": 20,
+      "mae": 9.0
+    },
+    {
+      "hour": 21,
+      "mae": 9.8
+    },
+    {
+      "hour": 22,
+      "mae": 10.5
+    },
+    {
+      "hour": 23,
+      "mae": 11.2
+    }
+  ],
+  "by_weekday": [
+    {
+      "weekday": 0,
+      "mae": 9.2
+    },
+    {
+      "weekday": 1,
+      "mae": 9.6
+    },
+    {
+      "weekday": 2,
+      "mae": 10.0
+    },
+    {
+      "weekday": 3,
+      "mae": 10.4
+    },
+    {
+      "weekday": 4,
+      "mae": 10.8
+    },
+    {
+      "weekday": 5,
+      "mae": 11.2
+    },
+    {
+      "weekday": 6,
+      "mae": 11.6
+    }
+  ],
+  "coverage_p10_p90": 0.79,
+  "last_7_days_mae": 10.2,
+  "drift_ratio": 1.05
+}

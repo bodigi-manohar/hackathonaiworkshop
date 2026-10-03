@@ -1,0 +1,14 @@
+[
+  {
+    "id": "a1",
+    "type": "peak",
+    "severity": "warn",
+    "level": "portfolio",
+    "entity_id": "all",
+    "window_start": "2013-02-15T18:00:00+11:00",
+    "window_end": "2013-02-15T20:00:00+11:00",
+    "value": 182.0,
+    "threshold": 170.0,
+    "message": "Evening peak above threshold"
+  }
+]
