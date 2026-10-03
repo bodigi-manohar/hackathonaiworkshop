@@ -1,0 +1,16 @@
+{
+  "run_id": "2013-02-15T00-00",
+  "origin_time": "2013-02-15T00:00:00+11:00",
+  "level": "portfolio",
+  "entity_id": "all",
+  "unit": "kW",
+  "slot_minutes": 30,
+  "model_version": "ensemble-v1",
+  "weather_source": "open-meteo",
+  "points": [
+    {"slot": 0, "timestamp": "2013-02-15T00:00:00+11:00", "p10": 118.4, "p50": 125.2, "p90": 133.9}
+  ],
+  "history": [
+    {"timestamp": "2013-02-14T00:00:00+11:00", "actual": 121.7}
+  ]
+}

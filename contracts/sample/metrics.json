@@ -1,0 +1,11 @@
+{
+  "scope": "walk_forward_backtest",
+  "by_model": [
+    {"model": "seasonal_naive", "mae": 12.4, "rmse": 16.0, "nmae": 0.098, "skill": 0.0},
+    {"model": "ensemble", "mae": 9.8, "rmse": 13.1, "nmae": 0.077, "skill": 0.21}
+  ],
+  "by_hour": [{"hour": 0, "mae": 8.1}],
+  "by_weekday": [{"weekday": 0, "mae": 9.5}],
+  "coverage_p10_p90": 0.79,
+  "last_7_days_mae": 10.2
+}

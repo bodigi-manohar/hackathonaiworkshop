@@ -1,0 +1,11 @@
+{
+  "mode": "advisory",
+  "assumptions": "Illustrative tariff and battery values",
+  "slots": [
+    {"slot": 0, "price": 0.18, "grid_before_kw": 125.2, "grid_after_kw": 140.0,
+     "battery_charge_kw": 14.8, "battery_discharge_kw": 0.0, "soc_kwh": 60.0}
+  ],
+  "cost_before": 410.2, "cost_after": 372.9, "saving": 37.3,
+  "peak_before_kw": 182.5, "peak_after_kw": 160.1,
+  "generator_recommendation": [{"slot": 36, "message": "Generator cheaper than grid for this slot"}]
+}

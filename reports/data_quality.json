@@ -1,0 +1,165 @@
+{
+  "rows_raw": 438000,
+  "duplicates_removed": 0,
+  "expected_slots_per_house": 17520,
+  "date_start": "2012-07-01 00:00:00",
+  "date_end": "2013-06-30 23:30:00",
+  "per_house": {
+    "1": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "10": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "11": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "12": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "13": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "14": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "15": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "16": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "17": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "18": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "19": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 3
+    },
+    "2": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "20": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "21": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 3
+    },
+    "22": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "23": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "24": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "25": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "3": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "4": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "5": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "6": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "7": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "8": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    },
+    "9": {
+      "missing_slots": 0,
+      "negative_values_clipped": 0,
+      "long_gap_slots_left_nan": 0,
+      "outliers_flagged": 0
+    }
+  },
+  "totals": {
+    "missing_slots": 0,
+    "negative_values_clipped": 0,
+    "long_gap_slots_left_nan": 0,
+    "outliers_flagged": 6
+  }
+}
