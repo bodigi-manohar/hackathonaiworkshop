@@ -10,13 +10,13 @@ class PeakInfo(BaseModel):
 
 
 class AccuracyInfo(BaseModel):
-    mae_kw: float
-    skill_vs_naive: float
+    mae_kw: float | None = None
+    skill_vs_naive: float | None = None
 
 
 class PlanSummary(BaseModel):
-    saving: float
-    peak_reduction_kw: float
+    saving: float | None = None
+    peak_reduction_kw: float | None = None
 
 
 class ExplainContext(BaseModel):
@@ -27,7 +27,7 @@ class ExplainContext(BaseModel):
     total_kwh_next_24h: float
     drivers: list[str] = []
     band_width_note: str | None = None
-    accuracy_last_7_days: AccuracyInfo
+    accuracy_last_7_days: AccuracyInfo | None = None
     alerts_summary: list[str] = []
-    plan_summary: PlanSummary
+    plan_summary: PlanSummary | None = None
     weather: dict = {}
